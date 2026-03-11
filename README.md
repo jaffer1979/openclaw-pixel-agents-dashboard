@@ -17,22 +17,24 @@ A pixel-art ops dashboard for [OpenClaw](https://openclaw.ai) deployments. Watch
 
 ## Quick Start
 
-### 1. Clone and install
+### Option A: npm (recommended)
+
+```bash
+npm install -g openclaw-pixel-agents-dashboard
+pixel-agents
+```
+
+### Option B: Clone from source
 
 ```bash
 git clone https://github.com/jaffer1979/openclaw-pixel-agents-dashboard.git
 cd openclaw-pixel-agents-dashboard
 npm install
-```
-
-### 2. Build and run
-
-```bash
 npm run build
 npm start
 ```
 
-### 3. Set up via the wizard
+### Set up via the wizard
 
 Open `http://localhost:5070` — the **setup wizard** walks you through everything:
 - Discovers your OpenClaw agents automatically

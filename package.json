@@ -1,5 +1,5 @@
 {
-  "name": "pixel-agents-dashboard",
+  "name": "openclaw-pixel-agents-dashboard",
   "version": "1.0.0",
   "description": "Real-time pixel art ops dashboard for OpenClaw agent deployments",
   "type": "module",
@@ -58,5 +58,9 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaffer1979/openclaw-pixel-agents-dashboard.git"
   }
 }
