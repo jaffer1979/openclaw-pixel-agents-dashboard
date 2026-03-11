@@ -1,0 +1,15 @@
+# Secrets — never publish
+dashboard.config.json
+
+# Dev/build files
+.git
+.gitignore
+node_modules
+src/
+server/
+tsconfig*.json
+vite.config.ts
+TASK*.md
+
+# Backups
+*.bak

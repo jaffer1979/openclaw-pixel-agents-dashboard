@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync Solara agent sessions for Pixel Agents Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=jaffer
+ExecStart=/home/jaffer/.openclaw/workspace/projects/pixel-agents-dashboard/scripts/sync-solara.sh
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

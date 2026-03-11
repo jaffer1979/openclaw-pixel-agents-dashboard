@@ -1,0 +1,15 @@
+[Unit]
+Description=Pixel Agents Dashboard — Station House agent activity visualizer
+After=network.target
+
+[Service]
+Type=simple
+User=jaffer
+WorkingDirectory=/home/jaffer/.openclaw/workspace/projects/pixel-agents-dashboard
+ExecStart=/usr/bin/env npx tsx server/index.ts
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

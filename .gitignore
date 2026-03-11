@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Config with secrets — use dashboard.config.example.json as template
+dashboard.config.json
+
+# Data directory (layout persistence, runtime state)
+data/
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
