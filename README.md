@@ -25,35 +25,22 @@ cd openclaw-pixel-agents-dashboard
 npm install
 ```
 
-### 2. Configure
-
-Copy the example config and edit it:
+### 2. Build and run
 
 ```bash
-cp dashboard.config.example.json dashboard.config.json
-```
-
-Open `dashboard.config.json` and set:
-
-- **`gateway.url`** — Your OpenClaw gateway URL (default: `http://localhost:18789`)
-- **`gateway.token`** — Use `${OPENCLAW_GATEWAY_TOKEN}` to read from env, or set directly
-- **`openclaw.agentsDir`** — Path to your agent session directories (default: `~/.openclaw/agents`)
-- **`agents`** — Define your agents (id, name, emoji, palette, alwaysPresent)
-
-See `dashboard.config.example.json` for detailed comments on every field.
-
-### 3. Run
-
-```bash
-# Set your gateway token (if using ${ENV_VAR} in config)
-export OPENCLAW_GATEWAY_TOKEN=your-token-here
-
-# Build and start
 npm run build
 npm start
 ```
 
-Dashboard serves at `http://localhost:5070` (or whatever port you configured).
+### 3. Set up via the wizard
+
+Open `http://localhost:5070` — the **setup wizard** walks you through everything:
+- Discovers your OpenClaw agents automatically
+- Configures your gateway connection
+- Lets you pick which features to enable
+- Generates your config file — you're done!
+
+> **Power users:** If you prefer manual config, copy `dashboard.config.example.json` to `dashboard.config.json` and edit it before starting. The wizard only runs when no config file is present. See [Configuration](#configuration) below for details.
 
 ### Development
 
